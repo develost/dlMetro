@@ -1,0 +1,60 @@
+/*.debug{display:none;} *//* decomment in production environment */
+
+/* fallback */
+.fixed-header   {height: 0px;}
+.flow                   {top: 0px;bottom:80px}
+.flow-header     {height:0px;}
+.flow-footer     {height:0px;}
+.fixed-footer   {height:80px;}
+
+/* min */
+@media only screen and (max-width: 320px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:100px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 100px;}
+}
+
+/* mid */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:80px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height:80px;}
+}
+
+/* large */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:80px}
+    .flow-header     {height:150px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 80px;}
+}
+
+/* xlarge */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:80px}
+    .flow-header     {height:150px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height:80px;}
+}
+
+/* xxlarge */
+@media only screen and (min-width: 1280px){
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:80px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height:80px;}
+}
+
+.fixed-footer   {
+    -webkit-box-shadow: 10px 10px 5px 10px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    10px 10px 5px 10px rgba(50, 50, 50, 0.75);
+    box-shadow:         10px 10px 5px 10px rgba(50, 50, 50, 0.75);
+}
+

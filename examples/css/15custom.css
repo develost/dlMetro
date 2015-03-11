@@ -1,0 +1,96 @@
+.debug{display:none;} /* decomment in production environment */
+
+/* general */
+@font-face {font-family:OpenDyslexic;src:url("OpenDyslexicAlta-Regular.otf") format("opentype");}
+
+.fixed-header,.flow-header{-webkit-box-shadow: 0px 10px 5px 0px rgba(150,150,150,0.75);-moz-box-shadow:0px 10px 5px 0px rgba(150,150,150,0.75);box-shadow:0px 10px 5px 0px rgba(150,150,150,0.75);text-align:right;background-color:#ffffff;background-repeat:no-repeat;background-position: top left;}
+.fixed-header p{padding:30px;}
+.content{margin-top:20px;}
+.last{padding-bottom:20px;}
+.cell{padding:10px;margin:10px;-moz-border-radius:5px;border-radius:5px;background-color:#F5F5F5;}
+.cell p {padding:10px;display:block;}
+.contact{text-align:right;font-size:80%;}
+body{font-family:OpenDyslexic, Arial;font-size:100%;background-color:#FFFFFF;}
+h1{padding-top:10px;padding-bottom:10px;text-align:center;color:black;background-color:#D32F2F;width:100%;-moz-border-radius:5px;border-radius:5px;}
+a,a:visited{text-decoration:none;color:#000000;text-decoration:none;}
+a:hover .cell h1{background-color:#B71C1C;}
+
+/* fallback */
+.fixed-header   {height:150px;}
+.flow                   {top:0px;bottom:0px}
+.flow-header     {height:0px;}
+.flow-footer     {height:100px;}
+.fixed-footer   {height:0px;}
+.img-contact     {height:32px;margin-left:5px;vertical-align:middle;}
+
+/* min */
+@media only screen and (max-width: 320px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:100px}
+    .flow-header     {height:100px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 100px;}
+    
+    .flow-header     {background-color:#DDDDDD;background-image:url("292x100_logoStudiolo.png"); background-repeat:no-repeat;background-position: top;}
+    .flow                   {padding-bottom: 20px;}    
+    .fixed-footer   {background-color:#DDDDDD;font-size:100%;text-align: center;-webkit-box-shadow: 0px -10px 5px 0px rgba(150, 150, 150, 0.75);-moz-box-shadow:    0px -10px 5px 0px rgba(150, 150, 150, 0.75);box-shadow:         0px -10px 5px 0px rgba(150, 150, 150, 0.75);}
+    .contact             {display:inline;}
+    .img-contact     {height: 45px;margin:6px;vertical-align: middle;}
+}
+
+/* mid */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:100px}
+    .flow-header     {height:100px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height:100px;}
+
+    .flow-header     {background-color:#DDDDDD;background-image:url("292x100_logoStudiolo.png"); background-repeat:no-repeat;background-position: top;}
+    .flow                   {padding-bottom: 20px;}    
+    .fixed-footer   {background-color:#DDDDDD;font-size:100%;text-align: center;-webkit-box-shadow: 0px -10px 5px 0px rgba(150, 150, 150, 0.75);-moz-box-shadow:    0px -10px 5px 0px rgba(150, 150, 150, 0.75);box-shadow:         0px -10px 5px 0px rgba(150, 150, 150, 0.75);}
+    .contact             {display:inline;}
+    .img-contact     {height: 45px;margin:6px;vertical-align: middle;}
+}
+
+/* large */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .fixed-header   {height:105px;}
+    .flow                   {top: 105px;bottom:10px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {width:292px;height:110px;top:50px;right:0px;}
+    
+    .flow                   {padding-right:300px;}
+    .fixed-header   {font-size:140%;background-image: url("large-header.jpg");}
+    .fixed-footer   {padding-top:100px;margin-right:10px;background-image:url("292x100_logoStudiolo.png"); background-repeat:no-repeat;background-position: top;}
+}
+
+/* xlarge */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+    .fixed-header   {height:105px;}
+    .flow                   {top: 105px;bottom:10px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {width:292px;height:110px;top:50px;right:0px;}
+    
+    .flow                   {padding-right:300px;}
+    .fixed-header   {font-size:200%;background-image: url("xlarge-header.jpg");}
+    .fixed-footer   {padding-top:100px;margin-right:10px;background-image:url("292x100_logoStudiolo.png"); background-repeat:no-repeat;background-position: top;}
+}
+
+/* xxlarge */
+@media only screen and (min-width: 1280px){
+    .fixed-header   {height:105px;}
+    .flow                   {top: 105px;bottom:10px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {width:292px;height:110px;top:50px;right:0px;}
+    
+    .flow                   {padding-right:300px;}
+    .fixed-header   {font-size:200%;background-image: url("xxlarge-header.jpg");}
+    .fixed-footer   {padding-top:100px;margin-right:10px;background-image:url("292x100_logoStudiolo.png"); background-repeat:no-repeat;background-position: top;}
+}
+
+
+

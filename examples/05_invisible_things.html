@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="../core/css/dlMetro.css">
+        <link rel="stylesheet" type="text/css" href="./css/05custom.css">
+        <script src="../core/js/dlMetro.js"></script>
+    </head>
+    <body>
+        <div class="main"> 
+            <div class="fixed-header"></div>
+            <div class="flow">
+                <div class="flow-header fallback-size">fallback flow-header</div>
+                <div class="flow-header min-size">min flow-header</div>
+                <div class="flow-header mid-size">mid flow-header</div>
+                <div class="flow-header large-size">large flow-header</div>
+                <div class="flow-header xlarge-size">xlarge flow-header</div>
+                <div class="flow-header xxlarge-size">xxlarge flow-header</div>
+                <div class="content all-size">
+                
+                    <div class="c2-all-size c6-min-size c6-mid-size"><div class="cell">
+                        1<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div></div>
+                    <div class="c2-all-size c6-min-size c6-mid-size"><div class="cell">
+                        2<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div></div>
+                    <div class="c2-all-size c6-min-size c6-mid-size"><div class="cell">
+                        3<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div></div>
+                    
+                    <div class="c0-all-size c6-fallback-size c6-large-size c6-xlarge-size c6-xxlarge-size"><div class="cell">
+                        this is visible only in fallback large xlarge and xxlarge versions
+                    </div></div>
+                    
+                    <div class="c2-all-size c6-min-size c6-mid-size"><div class="cell">
+                        4<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div></div>
+                    <div class="c2-all-size c6-min-size c6-mid-size"><div class="cell">
+                        5<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div></div>
+                    <div class="c2-all-size c6-min-size c6-mid-size last"><div class="cell">
+                        6<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div></div>                    
+                    
+                </div>
+                <div class="flow-footer all-size">all-size flow-footer</div>
+            </div>
+            <div class="debug all-size" onclick="this.style.display='none';">
+                <div class="fallback-size">fallback version <br> with<noscript>out</noscript> javascript</div>
+                <div class="min-size">min version <br> with<noscript>out</noscript> javascript</div>
+                <div class="mid-size">mid version <br> with<noscript>out</noscript> javascript</div>
+                <div class="large-size">large version <br> with<noscript>out</noscript> javascript</div>
+                <div class="xlarge-size">xlarge version <br> with<noscript>out</noscript> javascript</div>
+                <div class="xxlarge-size">xxlarge version <br> with<noscript>out</noscript> javascript</div>
+                <script>document.write("click to hide");</script>
+            </div>
+        </div>
+    <script src="./js/addSomeFun.js"></script>
+    </body>
+</html>

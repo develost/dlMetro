@@ -1,0 +1,64 @@
+/*.debug{display:none;} *//* decomment in production environment */
+
+/* fallback */
+.fixed-header   {height: 0px;}
+.flow                   {top: 0px;bottom:0px}
+.flow-header     {height:100px;}
+.flow-footer     {height:0px;}
+.fixed-footer   {height: 0px;}
+
+/* min */
+@media only screen and (max-width: 320px) {
+    .fixed-header   {height: 35px;}
+    .flow                   {top: 35px;bottom:0px}
+    .flow-header     {height:50px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 0px;}
+}
+
+/* mid */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    .fixed-header   {height: 35px;}
+    .flow                   {top: 35px;bottom:0px}
+    .flow-header     {height:50px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 0px;}
+}
+
+/* large */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:0px}
+    .flow-header     {height:100px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 0px;}
+    .left-page{margin-left:50px;}       
+    .right-page{margin-right:50px;}
+}
+
+/* xlarge */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:0px}
+    .flow-header     {height:100px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 0px;}
+    .left-page{margin-left:50px;}
+    .right-page{margin-right:50px;}    
+}
+
+/* xxlarge */
+@media only screen and (min-width: 1280px){
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:0px}
+    .flow-header     {height:100px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 0px;}
+    .left-page{margin-left:50px;}    
+    .right-page{margin-right:50px;}
+}
+
+
+.share-page{width:35px;margin-top:10px;text-align:center;height:100px;right:0px;margin-right:10px;top:50%;margin-top:-50px;}
+.flow-footer{height:50px;text-align:center;}
+

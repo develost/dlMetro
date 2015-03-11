@@ -1,0 +1,63 @@
+/*.debug{display:none;} *//* decomment in production environment */
+
+/* fallback */
+.fixed-header   {height: 100px;}
+.flow                   {top: 100px;bottom:0px}
+.flow-header     {height:0px;}
+.flow-footer     {height:55px;}
+.fixed-footer   {height: 0px;}
+
+/* min */
+@media only screen and (max-width: 320px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:0px}
+    .flow-header     {height:50px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+}
+
+/* mid */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:0px}
+    .flow-header     {height:60px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+}
+
+/* large */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .fixed-header   {height: 100px;}
+    .flow                   {top: 100px;bottom:0px}
+    .flow-header     {height:70px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+}
+
+/* xlarge */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+    .fixed-header   {height: 150px;}
+    .flow                   {top: 150px;bottom:0px}
+    .flow-header     {height:80px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+}
+
+/* xxlarge */
+@media only screen and (min-width: 1280px){
+    .fixed-header   {height: 200px;}
+    .flow                   {top: 200px;bottom:0px}
+    .flow-header     {height:90px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+}
+
+.content{padding:10px;}
+.last{padding-bottom:10px;}
+.cell{
+    padding:10px;
+    margin:10px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#DDDDDD;
+}
