@@ -7,21 +7,47 @@ TODO
 
 ## Getting started
 
+1. Start from an empty html file like this
+```html
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+    <body>
+    </body>
+</html>
+```
 
-1. Add dlMetro in head
+1. Add dlMetro in head (both javascript and css)
 ```html
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../core/css/dlMetro.css">
-    <link rel="stylesheet" type="text/css" href="./css/01custom.css">
     <script src="./core/js/dlMetro.js"></script>
 </head>
 ```
 
-
-'''
-TODO
-'''
+1. Create into the body the minimal configuration
+```html
+<body>
+    <div class="main"> 
+        <div class="flow">
+            <div class="content all-size">
+            </div>            
+        </div>
+        <div class="debug all-size" onclick="this.style.display='none';">
+            <div class="fallback-size">fallback version <br> with<noscript>out</noscript> javascript</div>
+            <div class="min-size">min version <br> with<noscript>out</noscript> javascript</div>
+            <div class="mid-size">mid version <br> with<noscript>out</noscript> javascript</div>
+            <div class="large-size">large version <br> with<noscript>out</noscript> javascript</div>
+            <div class="xlarge-size">xlarge version <br> with<noscript>out</noscript> javascript</div>
+            <div class="xxlarge-size">xxlarge version <br> with<noscript>out</noscript> javascript</div>
+            <script>document.write("click to hide");</script>
+        </div>
+    </div>
+</body>
+```
+and test resizing your browser
 
 
 ## Responsive
