@@ -18,7 +18,7 @@ TODO
 </html>
 ```
 
-1. Add dlMetro in head (both javascript and css)
+2. Add dlMetro in head (both javascript and css)
 ```html
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -27,7 +27,7 @@ TODO
 </head>
 ```
 
-1. Create into the body the minimal configuration
+3. Create into the body the minimal configuration
 ```html
 <body>
     <div class="main"> 
@@ -48,6 +48,8 @@ TODO
 </body>
 ```
 and test resizing your browser
+
+TODO
 
 
 ## Responsive
