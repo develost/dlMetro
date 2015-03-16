@@ -2,9 +2,9 @@
 
 ## Getting started
 
-0. Download at least dlMetro.js and dlMetro.css from the repository
+* Download at least dlMetro.js and dlMetro.css from the repository
 
-1. Start from an empty html file like this
+* Start from an empty html file like this
 ```html
 <html>
     <head>
@@ -14,7 +14,8 @@
     </body>
 </html>
 ```
-2. Add dlMetro in head (both javascript and css)
+
+* Add dlMetro in head (both javascript and css)
 ```html
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,7 +23,7 @@
     <script src="../core/js/dlMetro.js"></script>
 </head>
 ```
-3. Create into the body the minimal configuration
+* Create into the body the minimal configuration
 ```html
 <body>
     <div class="main"> 
@@ -44,7 +45,7 @@
 ```
 and test resizing your browser
 
-4. Add Header, footer and some cells
+* Add Header, footer and some cells
 ```html
 <div class="main">
         <div class="fixed-header fallback-size xlarge-size xxlarge-size">
@@ -73,7 +74,7 @@ and test resizing your browser
     </div>
 ```
 
-5. Create a new CSS file (00custom.css in this example) to set the height of headers and footers
+* Create a new CSS file (00custom.css in this example) to set the height of headers and footers
 
 ```css
 /*.debug{display:none;} *//* decomment in production environment */
@@ -131,7 +132,7 @@ and test resizing your browser
 }
 ```
 
-6. Do not forget to include css in html file
+* Do not forget to include css in html file
 
 ```html
     <head>
@@ -150,11 +151,11 @@ Optional: add colors to html file to see what you are doing
 </html>
 ```
     
-7. Now you should see something like this
+* Now you should see something like this
 
     
 
-8. Done!
+* Done!
 Congratulation you 
     
 
