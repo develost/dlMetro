@@ -1,14 +1,8 @@
-# dlMetro
-Simple and responsive metro ui with no dependencies.
-Build in pure javascript ad plain css.
-
-## Dress a Website with Windows 8 Metro ui
-TODO
+# dlMetro: dress a Website with Windows 8 Metro ui
 
 ## Getting started
 
 0. Download at least dlMetro.js and dlMetro.css from the repository
-
 
 1. Start from an empty html file like this
 ```html
@@ -20,7 +14,6 @@ TODO
     </body>
 </html>
 ```
-
 2. Add dlMetro in head (both javascript and css)
 ```html
 <head>
@@ -29,7 +22,6 @@ TODO
     <script src="../core/js/dlMetro.js"></script>
 </head>
 ```
-
 3. Create into the body the minimal configuration
 ```html
 <body>
@@ -53,7 +45,6 @@ TODO
 and test resizing your browser
 
 4. Add Header, footer and some cells
-
 ```html
 <div class="main">
         <div class="fixed-header fallback-size xlarge-size xxlarge-size">
