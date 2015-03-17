@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="../core/css/dlMetro.css">
+        <link rel="stylesheet" type="text/css" href="./css/06custom.css">
+        <link rel="stylesheet" href="http://openlayers.org/en/v3.3.0/css/ol.css" type="text/css">
+        <script src="../core/js/dlMetro.js"></script>
+    <script src="http://openlayers.org/en/v3.3.0/build/ol.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="main"> 
+            <div class="fixed-header fallback-size xlarge-size xxlarge-size">
+                Openlayers Map in a Windows 8 metro ui web page<br>
+                This is a fixed header
+            </div>
+            <div class="flow">
+                <div class="flow-header min-size mid-size large-size">
+                    Openlayers Map in a Windows 8 metro ui web page<br>
+                    This header flows with content
+                </div>
+                <div class="content all-size">
+                    <div class="inner-content">
+                    <div class="c6-all-size c3-xlarge-size c2-xxlarge-size"><div class="cell">
+                    <div id="map1" class="map"></div>
+                    </div></div>
+                    <div class="c6-all-size c3-xlarge-size c2-xxlarge-size"><div class="cell">
+                    <div id="map2" class="map"></div>
+                    </div></div>
+                    <div class="c6-fallback-size c6-min-size c6-mid-size c6-large-size c6-xlarge-size c0-xxlarge-size"><div class="cell">
+                    <p>This page is made with <a class="color-red" href="http://www.develost.com/dlMetro.html">dlMetro</a></p>
+                    <p>Maps are made with <a class="color-red" href="http://openlayers.org/">Openlayers 3</a></p>
+                    </div></div>
+                    
+                    <div class="c6-all-size c3-xlarge-size c2-xxlarge-size"><div class="cell">
+                    <div id="map3" class="map"></div>
+                    </div></div>
+                    
+                    <div class="c6-xxlarge-size"><div class="cell">
+                    <p>This page is made with <a class="color-red" href="http://www.develost.com/dlMetro.html">dlMetro</a></p>
+                    <p>Maps are made with <a class="color-red" href="http://openlayers.org/">Openlayers 3</a></p>
+                    </div></div>
+                    
+                    <div class="c6-all-size c3-xlarge-size c2-xxlarge-size"><div class="cell">
+                    <div id="map4" class="map"></div>
+                    </div></div>
+
+                    <div class="c6-fallback-size c6-min-size c6-mid-size c6-large-size c6-xlarge-size c0-xxlarge-size"><div class="cell">
+                    <p>This page is made with <a class="color-red" href="http://www.develost.com/dlMetro.html">dlMetro</a></p>
+                    <p>Maps are made with <a class="color-red" href="http://openlayers.org/">Openlayers 3</a></p>
+                    </div></div>
+                    
+                    
+                    <div class="c6-all-size c3-xlarge-size c2-xxlarge-size"><div class="cell">
+                    <div id="map5" class="map"></div>
+                    </div></div>
+                    <div class="c6-all-size c3-xlarge-size c2-xxlarge-size"><div class="cell">
+                    <div id="map6" class="map"></div>
+                    </div></div>
+                    
+                    <div class="c6-all-size last"><div class="cell">
+                    <p>This page is made with <a class="color-red" href="http://www.develost.com/dlMetro.html">dlMetro</a></p>
+                    <p>Maps made with  <a class="color-red" href="http://openlayers.org/">Openlayers 3</a></p>
+                    </div></div>
+                </div>
+                </div>
+                <div class="flow-footer min-size mid-size large-size">
+                    This footer flows with content
+                </div>
+            </div>
+            <div class="fixed-footer fallback-size xlarge-size xxlarge-size">
+                This is a fixed footer
+            </div>
+            <div class="debug all-size" onclick="this.style.display='none';">
+                <div class="fallback-size">fallback version <br> with<noscript>out</noscript> javascript</div>
+                <div class="min-size">min version <br> with<noscript>out</noscript> javascript</div>
+                <div class="mid-size">mid version <br> with<noscript>out</noscript> javascript</div>
+                <div class="large-size">large version <br> with<noscript>out</noscript> javascript</div>
+                <div class="xlarge-size">xlarge version <br> with<noscript>out</noscript> javascript</div>
+                <div class="xxlarge-size">xxlarge version <br> with<noscript>out</noscript> javascript</div>
+                <script>document.write("click to hide");</script>
+            </div>
+        </div>
+    <script src="./js/addSomeFun.js"></script>
+    <script type="text/javascript">
+    
+    
+    
+var map1 = new ol.Map({
+    target: 'map1',
+    layers: [new ol.layer.Tile({source: new ol.source.MapQuest({layer: 'sat'})})],
+    interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+    view: new ol.View({center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),zoom: 4 })
+});
+      
+var map2 = new ol.Map({
+    target: 'map2',
+    layers: [new ol.layer.Tile({source: new ol.source.MapQuest({layer: 'osm'})})],
+    interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+    view: new ol.View({center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),zoom: 4})
+});
+
+var map3 = new ol.Map({
+    target: 'map3',layers: [new ol.layer.Tile({source: new ol.source.OSM()})],
+    interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+    view: new ol.View({center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),zoom: 4})
+});       
+      
+var map4 = new ol.Map({
+    target: 'map4',
+    layers: [new ol.layer.Tile({source: new ol.source.Stamen({layer: 'watercolor'})})],
+    interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+    view: new ol.View({center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),zoom: 4})
+});       
+
+var map5 = new ol.Map({
+    target: 'map5',
+    layers: [new ol.layer.Tile({source: new ol.source.MapQuest({layer: 'hyb'})})],
+    interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+    view: new ol.View({center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),zoom: 4})
+});  
+
+var map6 = new ol.Map({
+    target: 'map6',
+    layers: [new ol.layer.Tile({source: new ol.source.OSM({attributions: [new ol.Attribution({html: 'Tiles &copy; <a href="http://www.opencyclemap.org/">' +'OpenCycleMap</a>'}),ol.source.OSM.ATTRIBUTION],url: 'http://{a-c}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png'})}),],
+    interactions: ol.interaction.defaults({mouseWheelZoom:false}),
+    view: new ol.View({center: ol.proj.transform([37.41, 8.82], 'EPSG:4326', 'EPSG:3857'),zoom: 4})
+}); 
+
+var mapArray = {
+ "map1":map1,
+ "map2":map2,
+ "map3":map3,
+ "map4":map4,
+ "map5":map5,
+ "map6":map6
+};
+
+function onMove(evt){
+    var map = evt.map;
+    //console.log("moveend"+ map.getTarget());
+    var currentId = "" + map.getTarget();
+    var currentCenter = map.getView().getCenter();
+    var currentZoom = map.getView().getZoom();
+    for (var key in mapArray){
+        if (key != currentId){
+            mapArray[key].getView().setCenter(currentCenter);
+            mapArray[key].getView().setZoom(currentZoom);
+            //console.log(key);
+        }
+    }
+    
+}
+
+map1.on("moveend",onMove);
+map2.on("moveend",onMove);
+map3.on("moveend",onMove);
+map4.on("moveend",onMove);
+map5.on("moveend",onMove);
+map6.on("moveend",onMove);
+
+
+    </script>
+    
+    </body>
+</html>
+
+
+
+
+
+

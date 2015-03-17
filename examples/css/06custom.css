@@ -1,0 +1,70 @@
+/*.debug{display:none;} *//* decomment in production environment */
+
+@keyframes slidy {0% { left: 0%; } 20% { left: 0%; } 25% { left: -100%; } 45% { left: -100%; } 50% { left: -200%; } 70% { left: -200%; } 75% { left: -300%; } 95% { left: -300%; } 100% { left: -400%; }}
+@-webkit-keyframes slidy {0% { left: 0%; } 20% { left: 0%; } 25% { left: -100%; } 45% { left: -100%; } 50% { left: -200%; } 70% { left: -200%; } 75% { left: -300%; } 95% { left: -300%; } 100% { left: -400%; }}
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { position: relative;  width: 500%;  margin: 0;  left: 0;  text-align: left;  font-size: 0;  -webkit-animation: 10s slidy infinite; animation: 10s slidy infinite; }
+
+.cell{padding:0px;margin:20px;}
+
+.map {height: 400px;width: 100%;}
+.last{padding-bottom:20px;}
+.inner-content{padding-left:20px;padding-right:20px;padding-top:20px;}
+
+/* fallback */
+.fixed-header   {height: 100px;}
+.flow                  {top: 100px;bottom:50px}
+.flow-header     {height:0px;}
+.flow-footer     {height:0px;}
+.fixed-footer   {height: 50px;}
+
+/* min */
+@media only screen and (max-width: 320px) {
+    .fixed-header   {height: 0px;}
+    .flow                 {top: 0px;bottom:0px}
+    .flow-header     {height:50px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+    .map {height: 150px;width: 100%;}    
+}
+
+/* mid */
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+    .fixed-header   {height: 0px;}
+    .flow                 {top: 0px;bottom:0px}
+    .flow-header     {height:60px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+    .map {height: 150px;width: 100%;}    
+}
+
+/* large */
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+    .fixed-header   {height: 0px;}
+    .flow                   {top: 0px;bottom:0px}
+    .flow-header     {height:70px;}
+    .flow-footer     {height:55px;}
+    .fixed-footer   {height: 0px;}
+    .map {height: 250px;width: 100%;}
+}
+
+/* xlarge */
+@media only screen and (min-width: 960px) and (max-width: 1280px) {
+    .fixed-header   {height: 100px;}
+    .flow                   {top: 100px;bottom:50px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 50px;}
+}
+
+/* xxlarge */
+@media only screen and (min-width: 1280px){
+    .fixed-header   {height: 100px;}
+    .flow                  {top: 100px;bottom:50px}
+    .flow-header     {height:0px;}
+    .flow-footer     {height:0px;}
+    .fixed-footer   {height: 50px;}
+}
+
+
