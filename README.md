@@ -155,6 +155,7 @@ Optional: add colors to html file to see what you are doing
 ![readme example](https://github.com/develost/dlMetro/raw/master/readme.jpg "readme example")
 
 * Done!
+Test visualization: it changes resizing browser window.
 
 * See more examples
 take a tour of \examples\ to see more.
