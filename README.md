@@ -152,19 +152,13 @@ Optional: add colors to html file to see what you are doing
 ```
     
 * Now you should see something like this
-TODO
-    
+![readme example](https://github.com/develost/dlMetro/raw/master/readme.jpg "readme example")
 
 * Done!
-Congratulation you 
-TODO
 
 * See more examples
 take a tour of \examples\ to see more.
 The file 00_readme.html is this example 
 
 ## My playgound
-TODO
-
-
-See dlMetro in action [here](http://www.develost.com) - in development
+See dlMetro in action [here](http://www.develost.com/dlMetro)
